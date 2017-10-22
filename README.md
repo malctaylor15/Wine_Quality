@@ -1,18 +1,16 @@
 # Wine_Quality
 
 In this notebook we use Bayesian Analysis to understand what qualities make a red wine good or bad.  
-The dataset is from UCI Machine Learning Repository here [https://archive.ics.uci.edu/ml/datasets/Wine+Quality]
+The dataset is from UCI Machine Learning Repository [here](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)
 The dataset contains 12 variables that include chemical information about the wine and a quality. 
 Quality is on a 1-10 scale and is categorical. 
 
-# Bayesian Analysis Notebook 
-
-In the Bayesian analysis notebook, we first look at the data distributions of each of the variables. 
-We examine the summary statistics, histograms of each variable as well as density plots. 
+## EDA 
+In the first few steps, we begin looking at the distributions and histograms of all the variables. We can undertstand the range and more about the distributions of the data. 
 
 ## Dependent Variable Transformation 
 
-We then make the quality variable into a binary variable by splitting on the mean which is about 5.6.  
+We make the quality variable into a binary variable by splitting on the mean which is about 5.6.  
 When we make the column binary, we create a new column that is 0 where the quality is 5 or below and  
 the column is 1 when quality is 6 or greater. This split gives 744 "0"s or low quality wines and 855 "high" quality wines. 
 The ratio of high quality to low quality wines is around 1 which is good for now. 
@@ -44,6 +42,8 @@ We see that most of the MAP values are pretty close to the regression results.
 Next we examine the trace -- the samples from the posterior distributions and get a better idea of the  
 distributions for the coefficients of the Bayesian regression. Again the results converge to the estimates found in the 
 regular logistic regression. 
+
+More information about the Bayesian project can be found [here](https://github.com/malctaylor15/Wine_Quality/blob/master/Bayesian%20Start.ipynb)
 
 
 
