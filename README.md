@@ -43,7 +43,23 @@ Next we examine the trace -- the samples from the posterior distributions and ge
 distributions for the coefficients of the Bayesian regression. Again the results converge to the estimates found in the 
 regular logistic regression. 
 
-More information about the Bayesian project can be found [here](https://github.com/malctaylor15/Wine_Quality/blob/master/Bayesian%20Start.ipynb)
+The jupyter notebook can be found [here](https://github.com/malctaylor15/Wine_Quality/blob/master/Bayesian%20Start.ipynb)
+
+
+## Linear Regression and Random Forest 
+
+In this notebook, we look at the quality as a continous variable and use linear regression and several random forest models to understand the data. We initially use recursive feature elimination to see which the linear regression and random forest model variables are important. 
+
+We scale the data such that the mean is 0 and the standard deviation is 1. Next we see which variables have the highest absolute value of the their coefficients. We see that those variables are ___ 
+
+Next we wish to tune the hyper parameters of a Random Forest model. We randomly search the hyper parameters of the Random Forest and find a good candidate for a final model. We find that several of the models have very high performance.  
+
+Next we compare the feature importance of both algorithms and find that features lists are similar but the scale is very different. 
+
+The jupyter notebook can be found [here](https://github.com/malctaylor15/Wine_Quality/blob/master/Wine%20Linear%20Regression%20and%20Random%20Forest.ipynb)
+
+
+
 
 
 
