@@ -1,4 +1,4 @@
-# Wine_Quality
+# WineQuality
 
 In this notebook we use Bayesian Analysis to understand what qualities make a red wine good or bad.  
 The dataset is from UCI Machine Learning Repository [here](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)
@@ -21,11 +21,11 @@ The ratio of high quality to low quality wines is around 1 which is good for now
 Before we go into Bayesian analysis, we conduct a standard logistic regression.  
 We wanted to reduce the number of variables and model complexity before doing the Bayesian analysis.  
 We use statsmodeling's interface to look at the model coefficients as well as the p-values.  
-We arbitrarily use a 5% p value cutoff and remove all variables that have a p value greater than 5%. 
+We arbitrarily use a 5% p-value cutoff and remove all variables that have a p-value greater than 5%. 
 
 Next we run another logisitic regression but only with the variables that were not dropped earlier.
-We include the intercept although it had a pvalue issue.  
-We find that there are still some variables with p value issues but we do not run another iteration. 
+We include the intercept although it had a p-value issue.  
+We find that there are still some variables with p-value issues but we do not run another iteration. 
 
 ## Bayesian Analysis  
 
